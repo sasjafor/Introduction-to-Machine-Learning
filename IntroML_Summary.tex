@@ -1,4 +1,4 @@
-\documentclass[11pt]{scrartcl}
+\documentclass[11pt]{article}
 \usepackage[headings]{fullpage}
 \usepackage[landscape,paper=a4paper,margin=0.25cm]{geometry}
 \usepackage[utf8]{inputenc}
@@ -11,13 +11,23 @@
 \usepackage[dvipsnames]{xcolor}
 
 % Text formatting
-\usepackage{parskip}
-\setlength{\parskip}{4pt} %set space after paragraph
+% \usepackage{parskip}
+% \setlength{\parskip}{0pt} %set space after paragraph
+% \usepackage{titlesec}
+% \addtokomafont{section}{\normalfont\sffamily\bfseries\large\color{LimeGreen}}
+% \addtokomafont{subsection}{\normalfont\sffamily\bfseries\color{CornflowerBlue}}
+% \titlespacing{\section}{0pt}{12pt}{-4pt}
+% \titlespacing{\subsection}{0pt}{-2pt}{-6pt}
+
 \usepackage{titlesec}
-\titlespacing*{\section}{0pt}{12pt}{-4pt}
+\titlespacing{\section}{0pt}{-2pt}{-4pt}
 \titleformat*{\section}{\normalfont\sffamily\bfseries\large\color{LimeGreen}}
-\titlespacing*{\subsection}{0pt}{-2pt}{-6pt}
+\titlespacing{\subsection}{0pt}{-2pt}{-2pt}
 \titleformat*{\subsection}{\normalfont\sffamily\bfseries\color{CornflowerBlue}}
+\thickmuskip=0mu
+% \setlength{\parindent}{0pt}
+% \setlength{\parskip}{\baselineskip}
+
 
 \usepackage[all=tight]{savetrees}
 \usepackage{multicol}
